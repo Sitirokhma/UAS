@@ -1,0 +1,171 @@
+body {
+font-family: monospace;
+background: url("gambar/background.jpg");
+background-size: cover;
+color: white;
+}
+.container {
+    max-width: 1005px;
+    margin: 0 auto;
+    padding: 2em 1em;
+}
+header {
+    text-align: center;
+}
+header h1{
+    margin-bottom: 40px;
+}
+.logo a {
+    width: 180px;
+}
+nav {
+    margin: 2em auto 0;
+    max-width: 600px;
+}
+nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+nav ul li {
+    list-style: none;
+}
+nav ul li a {
+    font-size: 1.25em;
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+}
+main {
+    display: flex;
+    flex-flow: column-reverse;
+}
+.hero {
+    text-align: center;
+}
+.hero h1 {
+    font-size: 2.5em;
+    font-weight: 700;
+}
+.hero p {
+    font-size: 1.2em;
+    font-weight: 600;
+    max-width: 500px;
+    line-height: 1.8em;
+    margin: 3em auto;
+}
+.hero p::before {
+    content: "";
+    display: block;
+    width: 120px;
+    border: 2px solid #ffdb37;
+    margin: 1em auto;
+}
+.hero a {
+    background: #ffd52e;
+    padding: 1em 3em;
+    border-radius: 50px;
+    color: white;
+    text-decoration: none;
+    font-size: 1.375em;
+    font-weight: 700;
+}
+figure {
+    text-align: center;
+}
+figure img {
+    text-align: center;
+    width: 300px;
+}
+.content-body {
+    margin-top: 60px;
+    text-align: center;
+    }
+.content-body a {
+    font-size: 20px;
+    color: white;
+    }
+.content-body img {
+    height: 250px;
+}
+.media{
+    margin-top: 60px;
+    margin-left: 40px;
+    padding: 20px;
+    color: white;
+    font-size: 15px;
+    }
+.media img{
+    height: 150px;
+    margin-top: 10px;
+    }
+
+@media screen and (min-width: 820px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        flex-flow: wrap;
+        align-items: center;    
+    }
+    nav {
+        margin: 0;
+    }
+    nav ul {
+        margin: 0;
+        padding: 0;
+        display: flex;
+    }
+    nav ul li {
+        list-style: none;
+        padding: 0.5em 2em;
+    }
+    nav ul li a {
+        font-size: 1.375em;
+        color: white;
+        font-weight: 700;
+        text-decoration: none;
+    }
+    main {
+        flex-flow: row;
+    }
+    .hero {
+        text-align: left;
+    }
+    .hero h1 {
+        font-size: 4em;
+    }
+    .hero p:before {
+        margin: 1em 0;
+    }
+    .hero p {
+        font-size: 1.3em;
+        padding: 0;
+        margin: 0 0 3em;
+    }
+    .figure img {
+        width: 120%;
+    }
+    .content-body {
+        margin-top: 60px;
+        text-align: center;
+        }
+    .content-body a {
+        font-size: 20px;
+        color: white;
+        }
+    .content-body img {
+        height: 250px;
+        }
+    .media{
+        margin-top: 60px;
+        margin-left: 40px;
+        padding: 20px;
+        color: white;
+        font-size: 15px;
+        }
+     .media img{
+        height: 150px;
+        margin-top: 10px;
+        }
+}
